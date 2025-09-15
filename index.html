@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Poster: Adolescent Mental Health in Freetown (Reorganized)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom aspect ratio for the poster to maintain shape */
+        @media (min-width: 1024px) {
+            .poster-aspect {
+                aspect-ratio: 16 / 9;
+            }
+        }
+        /* Reduce font size slightly for smaller screens to help content fit */
+        html {
+            font-size: 15px;
+        }
+        @media (min-width: 1280px) {
+            html {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-200 flex items-center justify-center min-h-screen p-4 sm:p-6 lg:p-8">
+
+    <!-- Poster Container -->
+    <div class="w-full max-w-[1600px] bg-white shadow-2xl rounded-lg flex flex-col poster-aspect overflow-hidden">
+
+        <!-- Header: Title, Authors, Affiliation -->
+        <header class="text-center border-b-4 border-slate-800 p-2 lg:p-3 shrink-0">
+            <h1 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-slate-900 leading-tight">
+                Spatial Analysis of Environmental Influences on Adolescent Mental Health in Freetown, Sierra Leone
+            </h1>
+            <p class="mt-1 text-sm lg:text-base font-bold text-slate-700">Alethea Desrosiers, PhD & Cara M. Antonaccio, PhD, MSPH</p>
+            <p class="mt-0.5 text-xs lg:text-sm italic text-slate-500">Brown University Alpert Medical School</p>
+        </header>
+
+        <!-- Main Content Grid (3 Columns, Results section is wider) - NO SCROLL -->
+        <main class="grid grid-cols-4 gap-3 p-3 flex-grow">
+
+            <!-- Column 1: Introduction & Methods -->
+            <div class="lg:col-span-1 flex flex-col gap-3">
+                <!-- Introduction Section -->
+                <section class="bg-slate-50 p-3 rounded-lg shadow-md flex flex-col flex-1">
+                    <h2 class="text-base lg:text-lg font-bold text-slate-800 border-b-2 border-blue-500 pb-1 mb-2">Introduction & Background</h2>
+                    <ul class="list-disc list-outside space-y-2 text-xs md:text-sm leading-relaxed pl-5">
+                        <li>In post-conflict urban settings like Freetown, Sierra Leone, environmental factors influencing adolescent mental health are not well understood, especially their geographic patterns.</li>
+                        <li>Understanding the spatial distribution of mental health challenges can help target interventions and plan resource allocation more effectively.</li>
+                        <li><strong class="font-semibold text-slate-800">Objective:</strong> This study aimed to identify geographic hotspots of elevated mental health symptoms among adolescents in Freetown and to analyze the associations between these symptoms and various contextual risk factors.</li>
+                    </ul>
+                </section>
+                <!-- Methods Section -->
+                <section class="bg-slate-50 p-3 rounded-lg shadow-md flex flex-col flex-1">
+                    <h2 class="text-base lg:text-lg font-bold text-slate-800 border-b-2 border-green-500 pb-1 mb-2">Methods</h2>
+                    <ul class="list-disc list-outside space-y-1.5 text-xs md:text-sm pl-5">
+                        <li><strong class="font-semibold">Study Design:</strong> A spatial epidemiological analysis was conducted.</li>
+                        <li><strong class="font-semibold">Data Source:</strong> Baseline data from the Youth Readiness Intervention (YRI).</li>
+                        <li><strong class="font-semibold">Participants:</strong> 1,200 male and female adolescents in Freetown, Sierra Leone.</li>
+                        <li>
+                            <strong class="font-semibold">Measures:</strong>
+                            <ul class="list-disc list-outside mt-1 pl-5 space-y-1 text-xs">
+                                <li><strong class="font-medium">Mental Health:</strong> Hopkins Symptom Checklist (HSCL).</li>
+                                <li><strong class="font-medium">Contextual Factors:</strong> Socio-demographics & Environmental Stressors.</li>
+                            </ul>
+                        </li>
+                        <li><strong class="font-semibold">Analysis:</strong> Descriptive chloropleth mapping and spatial regression models were used to examine associations between mental health symptoms and contextual factors.</li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Column 2: Results (Wider) -->
+            <div class="lg:col-span-2 bg-slate-50 p-3 rounded-lg shadow-md flex flex-col space-y-3">
+                <section class="flex-grow flex flex-col">
+                    <h2 class="text-lg lg:text-xl font-bold text-slate-800 border-b-2 border-amber-500 pb-1 mb-2">Results</h2>
+                    <ul class="list-disc list-outside space-y-1 text-xs md:text-sm text-slate-700 pl-5 mb-2">
+                        <li>Analyses revealed spatial heterogeneity (i.e., "hotspots") of mental health symptoms across Freetown.</li>
+                        <li>Adolescent mental health was associated with proximity to key environmental risk factors, including historical landslide locations and waste disposal sites.</li>
+                    </ul>
+                    
+                    <!-- Figures -->
+                    <div class="flex-grow grid grid-cols-2 gap-3 mb-2">
+                        <div class="text-center">
+                             <h3 class="text-sm lg:text-base font-bold text-slate-800 mb-1">Figure 1a: Hotspots of Anxiety Symptoms</h3>
+                            <img src="https://placehold.co/600x450/E2E8F0/475569?text=Figure+1a" alt="Map showing hotspots of anxiety symptoms" class="w-full h-auto rounded-lg shadow-md border border-white">
+                            <p class="mt-1 text-xs italic text-slate-600">Spatial distribution of average mental health symptom scores among adolescents.</p>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-sm lg:text-base font-bold text-slate-800 mb-1">Figure 1b: Environmental Risk Factors</h3>
+                            <img src="https://placehold.co/600x450/E2E8F0/475569?text=Figure+1b" alt="Map showing environmental risk factors" class="w-full h-auto rounded-lg shadow-md border border-white">
+                            <p class="mt-1 text-xs italic text-slate-600">Spatial distribution of historical environmental hazards and waste sites near schools.</p>
+                        </div>
+                    </div>
+
+                    <!-- Table -->
+                    <div>
+                        <h3 class="text-sm lg:text-base font-bold text-slate-800 text-center mb-1">Table 1: Spatial Regression Results</h3>
+                        <div class="overflow-x-auto">
+                            <table class="w-full bg-white rounded-lg shadow text-xs">
+                                <thead class="bg-slate-800 text-white">
+                                    <tr>
+                                        <th class="py-1 px-2 text-left">Environmental Variable</th>
+                                        <th class="py-1 px-2 text-center">Coefficient (β)</th>
+                                        <th class="py-1 px-2 text-center">p-value</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-200 text-slate-700">
+                                    <tr>
+                                        <td class="py-1 px-2">Proximity to Waste Sites</td>
+                                        <td class="py-1 px-2 text-center font-mono">0.24</td>
+                                        <td class="py-1 px-2 text-center font-mono">&lt;0.01</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-1 px-2">Traffic Density</td>
+                                        <td class="py-1 px-2 text-center font-mono">0.19</td>
+                                        <td class="py-1 px-2 text-center font-mono">&lt;0.05</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-1 px-2">Community Socioeconomic Status (SES)</td>
+                                        <td class="py-1 px-2 text-center font-mono">-0.31</td>
+                                        <td class="py-1 px-2 text-center font-mono">&lt;0.01</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Column 3: Conclusions & References -->
+            <div class="lg:col-span-1 flex flex-col gap-3">
+                 <!-- Conclusions Section -->
+                <section class="bg-slate-50 p-3 rounded-lg shadow-md flex flex-col flex-grow">
+                     <h2 class="text-base lg:text-lg font-bold text-slate-800 border-b-2 border-purple-500 pb-1 mb-2">Conclusions & Implications</h2>
+                    <ul class="list-disc list-outside space-y-2 text-xs md:text-sm leading-relaxed pl-5 flex-grow">
+                        <li>This study provides key insights into the geospatial dynamics of adolescent mental health in a resource-constrained, post-conflict urban setting.</li>
+                        <li>The identification of geographic hotspots suggests opportunities for targeted interventions and more efficient resource allocation.</li>
+                        <li>The link between mental health and environmental factors underscores the need to address these determinants to improve adolescent well-being.</li>
+                        <li>Integrating spatial analysis into psychiatric research is a valuable tool for understanding risk and resilience.</li>
+                    </ul>
+                </section>
+                <!-- References & Acknowledgements Section -->
+                 <section class="bg-slate-50 p-3 rounded-lg shadow-md flex flex-col">
+                    <h2 class="text-sm lg:text-base font-bold text-slate-800 border-b-2 border-slate-400 pb-1 mb-1">References & Acknowledgements</h2>
+                    <p class="text-xs text-slate-600">
+                        [Still adding key references] | [Need to acknowledge NIMH funding sources, collaborators, and participants]
+                    </p>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+
